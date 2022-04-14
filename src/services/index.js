@@ -7,7 +7,7 @@ const location = {
   lon: 74.3292,
 };
 
-export const fetchWeatherData = async () =>
+export const fetchForecastData = async () =>
   await axios.get(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${location.lat}&lon=${location.lon}&appid=${API_KEY}`
+    `https://api.openweathermap.org/data/2.5/forecast?lat=${location.lat}&lon=${location.lon}&appid=${API_KEY}`
   );
