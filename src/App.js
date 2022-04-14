@@ -1,11 +1,12 @@
 /* Root component for the application */
+import { Weather } from "./components";
 
 const App = () => {
-  return <div>
-    <h1>
-      Front-end Practice Assesment
-    </h1>
-  </div>;
+  return (
+    <div className="app">
+      <Weather />
+    </div>
+  );
 };
 
 export default App;
