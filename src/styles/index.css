@@ -8,6 +8,10 @@ body {
   background-color: aliceblue;
 }
 
+h3 {
+  margin: 0;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -23,34 +27,37 @@ code {
 }
 
 .weather-widget {
-  background-color: white;
+  background-color: #DDDDDD;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
+  width: 180px;
   box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
     rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
 }
 
 .weather-widget .day {
-  color: orange;
+  color: #959595;
 }
 
-.weather-widget .condition {
-  color: purple;
+.weather-widget .condition .loader {
+  height: 104px;
+  display: flex;
+  align-items: center;
 }
 
 .weather-widget .min-max-container {
   display: flex;
+  width: 100%;
   justify-content: space-evenly;
 }
 
 .weather-widget .min-max-container .max-temp {
   padding: 16px;
-  color: red;
+  color: #AAAAAA;
 }
 
 .weather-widget .min-max-container .min-temp {
   padding: 16px;
-  color: green;
+  color: #3c3c3c;
 }
